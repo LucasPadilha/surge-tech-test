@@ -1,0 +1,1051 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+
+@media print {
+  body .markdown-body {
+    padding: 0;
+    border: none;
+  }
+}
+</style><title>1-how-to-use-the-api</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-how-to-use-the-api" class="anchor" href="#how-to-use-the-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use the API</h1>
+<h2>
+<a id="user-content-authentication" class="anchor" href="#authentication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authentication</h2>
+<p>This API uses a combination of <code>Access Token</code> and <code>Refresh Token</code> to authorize access to endpoints.</p>
+<h4>
+<a id="user-content-generating-the-tokens" class="anchor" href="#generating-the-tokens" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Generating the Tokens</h4>
+<p>In order to generate the required tokens, the client must make a <code>POST</code> request to <code>/tokens</code> with the <code>username</code> and <code>password</code> in a JSON-formatted body.</p>
+<h5>
+<a id="user-content-example-request" class="anchor" href="#example-request" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example request</h5>
+<pre><code>curl -X "POST" "https://api.restaurantmanager.com/tokens" \
+	-H "Accept: application/json" \
+	-H "Content-Type: application/json" \
+	-d "{ \"username\": \"admin\", \"password\": \"password\" }"
+</code></pre>
+<h5>
+<a id="user-content-example-response" class="anchor" href="#example-response" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example response</h5>
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+Set-Cookie: refresh_token=&lt;&lt;refresh-token&gt;&gt;; expires:...; Secure; HttpOnly
+
+{
+	"token": "&lt;&lt;access_token&gt;&gt;"
+}
+</code></pre>
+<h4>
+<a id="user-content-authorization-header" class="anchor" href="#authorization-header" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authorization Header</h4>
+<p>To authenticate, the client has to add an <code>Authorization</code> header to all API requests with the previously generated <code>Access Token</code>.</p>
+<h4>
+<a id="user-content-access-token" class="anchor" href="#access-token" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Access Token</h4>
+<p>To use the <code>Access Token</code>, the client must set a plain text header named <code>Authorization</code> with the contents of the header being <code>Bearer XXX</code> where <code>XXX</code> is your <code>Access Token</code>. The <code>Access Token</code> expires in <strong>60 minutes</strong>.</p>
+<h5>
+<a id="user-content-example-header" class="anchor" href="#example-header" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Header</h5>
+<pre><code>GET https://api.restaurantmanager.com/resource HTTP/1.1
+Authorization: Bearer &lt;&lt;Your-Access-Token-Here&gt;&gt;
+</code></pre>
+<pre><code>curl -X "GET" "https://api.restaurantmanager.com/resource" \
+	-H "Authorization: Bearer &lt;&lt;Your-Access-Token-Here&gt;&gt;" \
+	-H "Content-Type: application/json"
+</code></pre>
+<h4>
+<a id="user-content-refresh-token" class="anchor" href="#refresh-token" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refresh Token</h4>
+<p>The <code>Refresh Token</code> is generated with the <code>Access Token</code> and has a expiration time of <strong>30 days</strong>. During that time, if a request is sent using an expired <code>Access Token</code> but with a valid <code>Refresh Token</code>, a <code>401</code> response will be sent to the client.</p>
+<h5>
+<a id="user-content-example-response-1" class="anchor" href="#example-response-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example response</h5>
+<pre><code>HTTP/1.1 401 UNAUTHORIZED
+Content-Type: application/json
+
+{
+	"errors": [
+		{
+			"field": null,
+			"message": "access token needs refresh"
+		}
+	]
+}
+</code></pre>
+<h4>
+<a id="user-content-requesting-a-new-access-token" class="anchor" href="#requesting-a-new-access-token" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requesting a new Access Token</h4>
+<p>In order to request a new <code>Access Token</code> the client must make a <code>GET</code> request to <code>/tokens/refresh</code> with the old <code>Access Token</code> in the request headers.</p>
+<h5>
+<a id="user-content-example-request-1" class="anchor" href="#example-request-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example request</h5>
+<pre><code>GET https://api.restaurantmanager.com/tokens/refresh
+Authorization: Bearer &lt;&lt;Your-Expired-Access-Token-Here&gt;&gt;
+</code></pre>
+<pre><code>curl -X "GET" "https://api.restaurantmanager.com/tokens/refresh" \
+	-H "Authorization: Bearer &lt;&lt;Your-Expired-Access-Token-Here&gt;&gt;" \
+	-H "Content-Type: application/json"
+</code></pre>
+<h5>
+<a id="user-content-example-response-2" class="anchor" href="#example-response-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example response</h5>
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+Set-Cookie: refresh_token=&lt;&lt;refresh-token&gt;&gt;; expires:...; Secure; HttpOnly
+
+{
+	"token": "&lt;&lt;new-access-token&gt;&gt;"
+}
+</code></pre>
+<h2>
+<a id="user-content-authorization" class="anchor" href="#authorization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authorization</h2>
+<h4>
+<a id="user-content-access-token-permissions" class="anchor" href="#access-token-permissions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Access Token Permissions</h4>
+<p>The <code>Access Token</code> grants the client full access to the API endpoints in behalf of the associated user.</p>
+<h2>
+<a id="user-content-requests" class="anchor" href="#requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requests</h2>
+<h4>
+<a id="user-content-making-a-request" class="anchor" href="#making-a-request" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making a request</h4>
+<h5>
+<a id="user-content-host" class="anchor" href="#host" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Host</h5>
+<p>The host for the API requests is always <code>https://api.restaurantmanager.com</code></p>
+<p><strong>All requests must be made over HTTPS. The API does not support HTTP.</strong></p>
+<h5>
+<a id="user-content-authorization-header-1" class="anchor" href="#authorization-header-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authorization header</h5>
+<p>The client must provide an authorization header as described in <code>Authentication</code>.</p>
+<h5>
+<a id="user-content-http-verbs" class="anchor" href="#http-verbs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTTP verbs</h5>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Retrieve a resource or group of resources</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Create a new resource</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Update an existing resource</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Delete an existing resource</td>
+</tr>
+</tbody>
+</table>
+<h5>
+<a id="user-content-accept-header" class="anchor" href="#accept-header" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Accept header</h5>
+<p>The API provides JSON responses and expects an <code>accept</code> header. If not set, the API will use <code>application/json</code>.</p>
+<pre><code>GET https://api.restaurantmanager.com/resource HTTP/1.1
+Accept: application/json
+</code></pre>
+<h4>
+<a id="user-content-formatting-your-request" class="anchor" href="#formatting-your-request" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Formatting your request</h4>
+<h5>
+<a id="user-content-request-body" class="anchor" href="#request-body" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Request body</h5>
+<p>When submitting data to a resource via <code>POST</code> or <code>PUT</code>, the client must submit the payload in JSON.</p>
+<pre><code>POST https://api.restaurantmanager.com/resource HTTP/1.1
+Content-type: application/json
+</code></pre>
+<pre><code>{
+	"name": "new name"
+}
+</code></pre>
+<h5>
+<a id="user-content-pagination" class="anchor" href="#pagination" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pagination</h5>
+<p>Some <code>GET</code> resources allow for retrieval of information in batches. The query args are provided in the resource documentation when available to consume.</p>
+<p>When requesting multiple items, the API will default the request limit to 25 items. The client can specify a different limit but cannot exceed the default limit.</p>
+<p>Below is a basic pagination example.</p>
+<pre><code>GET https://api.restaurantmanager.com/resource?limit=15&amp;offset=10 HTTP/1.1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>The number of records to return</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The number of records to skip</td>
+</tr>
+</tbody>
+</table>
+<h5>
+<a id="user-content-search--parameters" class="anchor" href="#search--parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Search &amp; Parameters</h5>
+<p>Some resources allow to search by a specific field. In this example, we will display a paginated URI example, searching for resources where the name contains <code>foo</code>.</p>
+<pre><code>GET https://api.restaurantmanager.com/resource?name=foo&amp;bar=baz HTTP/1.1
+</code></pre>
+<h4>
+<a id="user-content-successful-requests" class="anchor" href="#successful-requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Successful requests</h4>
+<p>Below is a general overview of what resource objects return with successful API requests.</p>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Returns a single resource object or array of resource objects</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Returns the newly created resource object</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Returns the updated resource object</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>No content is returned</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-responses" class="anchor" href="#responses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Responses</h2>
+<h4>
+<a id="user-content-content-type-header" class="anchor" href="#content-type-header" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Content-Type header</h4>
+<p>All responses are returned in JSON format. We specify this by sending the <code>content-type</code> header.</p>
+<pre><code>GET https://api.restaurantmanager.com/resource HTTP/1.1
+</code></pre>
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"foo": "bar"
+}
+</code></pre>
+<h4>
+<a id="user-content-status-codes" class="anchor" href="#status-codes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Status codes</h4>
+<p>Below is a table containing descriptions of the various status codes we currently support against various resources.</p>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>No error</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Successfully created</td>
+</tr>
+<tr>
+<td>204</td>
+<td>Successfully deleted</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Requires authentication</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Requires permission</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal server error</td>
+</tr>
+</tbody>
+</table>
+<h4>
+<a id="user-content-pagination-1" class="anchor" href="#pagination-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pagination</h4>
+<p>When a request is made with a pagination query, the following data is included in the header to allow for easy traversal of previous, current, first and last page of the data set.</p>
+<pre><code>GET https://api.restaurantmanager.com/resource?limit=5&amp;offset=0 HTTP/1.1
+</code></pre>
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+
+Pagination-Count: 100
+Pagination-Offset: 0
+Pagination-Limit: 5
+</code></pre>
+<h2>
+<a id="user-content-errors" class="anchor" href="#errors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Errors</h2>
+<h4>
+<a id="user-content-response-codes" class="anchor" href="#response-codes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Response codes</h4>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Bad request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Requires authentication</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Requires permission</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal server error</td>
+</tr>
+</tbody>
+</table>
+<h4>
+<a id="user-content-failed-requests" class="anchor" href="#failed-requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Failed requests</h4>
+<pre><code>GET https://api.restaurantmanager.com/resource HTTP/1.1
+</code></pre>
+<pre><code>HTTP/1.1 400 BAD REQUEST
+Content-Type: application/json
+
+{
+	"errors": [
+		{"field": "identifier", "message": "error message"}
+	]
+}
+</code></pre>
+</article></body></html>
